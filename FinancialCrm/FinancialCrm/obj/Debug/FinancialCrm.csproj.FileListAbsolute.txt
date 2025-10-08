@@ -16,3 +16,4 @@ C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\obj\Debug\FinancialCrm.pdb
 C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\bin\Debug\FinancialCrm.pdb
 C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\obj\Debug\FinancialCrm.exe.config
 C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\obj\Debug\FinancialCrm.FrmDashboard.resources
+C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\obj\Debug\FinancialCrm.FrmCategory.resources

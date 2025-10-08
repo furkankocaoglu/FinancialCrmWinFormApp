@@ -31,12 +31,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.frmDashboardButton = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnBillForm = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCategory = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -73,13 +73,14 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.frmDashboardButton);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.btnBillForm);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(2, 47);
+            this.panel1.Controls.Add(this.btnCategory);
+            this.panel1.Location = new System.Drawing.Point(3, 47);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(287, 680);
             this.panel1.TabIndex = 0;
@@ -88,7 +89,8 @@
             // 
             this.button8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button8.Location = new System.Drawing.Point(42, 511);
+            this.button8.Location = new System.Drawing.Point(43, 511);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(205, 44);
             this.button8.TabIndex = 7;
@@ -99,29 +101,33 @@
             // 
             this.button7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button7.Location = new System.Drawing.Point(42, 448);
+            this.button7.Location = new System.Drawing.Point(43, 448);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(205, 44);
             this.button7.TabIndex = 6;
             this.button7.Text = "Ayarlar";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // frmDashboardButton
             // 
-            this.button6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button6.Location = new System.Drawing.Point(42, 389);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(205, 44);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Dashboard";
-            this.button6.UseVisualStyleBackColor = true;
+            this.frmDashboardButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.frmDashboardButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.frmDashboardButton.Location = new System.Drawing.Point(43, 389);
+            this.frmDashboardButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.frmDashboardButton.Name = "frmDashboardButton";
+            this.frmDashboardButton.Size = new System.Drawing.Size(205, 44);
+            this.frmDashboardButton.TabIndex = 5;
+            this.frmDashboardButton.Text = "Dashboard";
+            this.frmDashboardButton.UseVisualStyleBackColor = true;
+            this.frmDashboardButton.Click += new System.EventHandler(this.frmDashboardButton_Click);
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button5.Location = new System.Drawing.Point(42, 325);
+            this.button5.Location = new System.Drawing.Point(43, 325);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(205, 44);
             this.button5.TabIndex = 4;
@@ -132,7 +138,8 @@
             // 
             this.btnBillForm.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBillForm.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnBillForm.Location = new System.Drawing.Point(42, 263);
+            this.btnBillForm.Location = new System.Drawing.Point(43, 263);
+            this.btnBillForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBillForm.Name = "btnBillForm";
             this.btnBillForm.Size = new System.Drawing.Size(205, 44);
             this.btnBillForm.TabIndex = 3;
@@ -144,7 +151,8 @@
             // 
             this.button3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button3.Location = new System.Drawing.Point(42, 203);
+            this.button3.Location = new System.Drawing.Point(43, 203);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(205, 44);
             this.button3.TabIndex = 2;
@@ -155,23 +163,26 @@
             // 
             this.button2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Location = new System.Drawing.Point(42, 143);
+            this.button2.Location = new System.Drawing.Point(43, 143);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(205, 44);
             this.button2.TabIndex = 1;
             this.button2.Text = "Bankalar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCategory
             // 
-            this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(42, 84);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 44);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Kategoriler";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCategory.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCategory.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnCategory.Location = new System.Drawing.Point(43, 84);
+            this.btnCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(205, 44);
+            this.btnCategory.TabIndex = 0;
+            this.btnCategory.Text = "Kategoriler";
+            this.btnCategory.UseVisualStyleBackColor = true;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // panel2
             // 
@@ -179,7 +190,8 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label1);
             this.panel2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.panel2.Location = new System.Drawing.Point(2, 3);
+            this.panel2.Location = new System.Drawing.Point(3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1352, 46);
             this.panel2.TabIndex = 1;
@@ -189,7 +201,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(10, 6);
+            this.label1.Location = new System.Drawing.Point(11, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 28);
             this.label1.TabIndex = 2;
@@ -201,7 +213,8 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.lblZiraatBankBalance);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(334, 67);
+            this.panel3.Location = new System.Drawing.Point(333, 66);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(297, 179);
             this.panel3.TabIndex = 2;
@@ -211,7 +224,7 @@
             this.lblZiraatBankBalance.AutoSize = true;
             this.lblZiraatBankBalance.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblZiraatBankBalance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblZiraatBankBalance.Location = new System.Drawing.Point(54, 59);
+            this.lblZiraatBankBalance.Location = new System.Drawing.Point(53, 59);
             this.lblZiraatBankBalance.Name = "lblZiraatBankBalance";
             this.lblZiraatBankBalance.Size = new System.Drawing.Size(145, 58);
             this.lblZiraatBankBalance.TabIndex = 5;
@@ -234,7 +247,8 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.lblVakifBankBalance);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(666, 67);
+            this.panel4.Location = new System.Drawing.Point(667, 66);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(297, 179);
             this.panel4.TabIndex = 3;
@@ -244,7 +258,7 @@
             this.lblVakifBankBalance.AutoSize = true;
             this.lblVakifBankBalance.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblVakifBankBalance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblVakifBankBalance.Location = new System.Drawing.Point(54, 59);
+            this.lblVakifBankBalance.Location = new System.Drawing.Point(53, 59);
             this.lblVakifBankBalance.Name = "lblVakifBankBalance";
             this.lblVakifBankBalance.Size = new System.Drawing.Size(145, 58);
             this.lblVakifBankBalance.TabIndex = 5;
@@ -267,7 +281,8 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.lblIsBankasiBalance);
             this.panel5.Controls.Add(this.label7);
-            this.panel5.Location = new System.Drawing.Point(996, 67);
+            this.panel5.Location = new System.Drawing.Point(996, 66);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(297, 179);
             this.panel5.TabIndex = 6;
@@ -277,7 +292,7 @@
             this.lblIsBankasiBalance.AutoSize = true;
             this.lblIsBankasiBalance.Font = new System.Drawing.Font("Calibri", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblIsBankasiBalance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblIsBankasiBalance.Location = new System.Drawing.Point(54, 59);
+            this.lblIsBankasiBalance.Location = new System.Drawing.Point(53, 59);
             this.lblIsBankasiBalance.Name = "lblIsBankasiBalance";
             this.lblIsBankasiBalance.Size = new System.Drawing.Size(145, 58);
             this.lblIsBankasiBalance.TabIndex = 5;
@@ -310,8 +325,10 @@
             this.groupBox1.Controls.Add(this.lblBankProccess1);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(334, 269);
+            this.groupBox1.Location = new System.Drawing.Point(333, 270);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Size = new System.Drawing.Size(959, 434);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
@@ -321,9 +338,9 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(6, 378);
+            this.label13.Location = new System.Drawing.Point(5, 378);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(525, 44);
+            this.label13.Size = new System.Drawing.Size(420, 35);
             this.label13.TabIndex = 9;
             this.label13.Text = "---------------------------------------------";
             // 
@@ -331,7 +348,7 @@
             // 
             this.lblBankProccess5.AutoSize = true;
             this.lblBankProccess5.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBankProccess5.Location = new System.Drawing.Point(6, 342);
+            this.lblBankProccess5.Location = new System.Drawing.Point(5, 342);
             this.lblBankProccess5.Name = "lblBankProccess5";
             this.lblBankProccess5.Size = new System.Drawing.Size(104, 35);
             this.lblBankProccess5.TabIndex = 8;
@@ -341,9 +358,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(6, 295);
+            this.label11.Location = new System.Drawing.Point(5, 295);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(525, 44);
+            this.label11.Size = new System.Drawing.Size(420, 35);
             this.label11.TabIndex = 7;
             this.label11.Text = "---------------------------------------------";
             // 
@@ -351,7 +368,7 @@
             // 
             this.lblBankProccess4.AutoSize = true;
             this.lblBankProccess4.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBankProccess4.Location = new System.Drawing.Point(6, 260);
+            this.lblBankProccess4.Location = new System.Drawing.Point(5, 260);
             this.lblBankProccess4.Name = "lblBankProccess4";
             this.lblBankProccess4.Size = new System.Drawing.Size(104, 35);
             this.lblBankProccess4.TabIndex = 6;
@@ -361,9 +378,9 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(6, 215);
+            this.label9.Location = new System.Drawing.Point(5, 215);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(525, 44);
+            this.label9.Size = new System.Drawing.Size(420, 35);
             this.label9.TabIndex = 5;
             this.label9.Text = "---------------------------------------------";
             // 
@@ -371,7 +388,7 @@
             // 
             this.lblBankProccess3.AutoSize = true;
             this.lblBankProccess3.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBankProccess3.Location = new System.Drawing.Point(6, 180);
+            this.lblBankProccess3.Location = new System.Drawing.Point(5, 180);
             this.lblBankProccess3.Name = "lblBankProccess3";
             this.lblBankProccess3.Size = new System.Drawing.Size(104, 35);
             this.lblBankProccess3.TabIndex = 4;
@@ -381,7 +398,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(2, 137);
+            this.label6.Location = new System.Drawing.Point(3, 137);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(420, 35);
             this.label6.TabIndex = 3;
@@ -411,7 +428,7 @@
             // 
             this.lblBankProccess1.AutoSize = true;
             this.lblBankProccess1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBankProccess1.Location = new System.Drawing.Point(6, 25);
+            this.lblBankProccess1.Location = new System.Drawing.Point(5, 25);
             this.lblBankProccess1.Name = "lblBankProccess1";
             this.lblBankProccess1.Size = new System.Drawing.Size(104, 35);
             this.lblBankProccess1.TabIndex = 0;
@@ -429,6 +446,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmBanks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmBanks";
@@ -451,9 +469,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button frmDashboardButton;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnBillForm;
         private System.Windows.Forms.Button button3;
