@@ -31,7 +31,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -84,7 +84,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -98,17 +98,18 @@
             this.panel1.Size = new System.Drawing.Size(287, 730);
             this.panel1.TabIndex = 17;
             // 
-            // button8
+            // exitButton
             // 
-            this.button8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button8.Location = new System.Drawing.Point(43, 511);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(205, 44);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Çıkış Yap";
-            this.button8.UseVisualStyleBackColor = true;
+            this.exitButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.exitButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.exitButton.Location = new System.Drawing.Point(43, 511);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(205, 44);
+            this.exitButton.TabIndex = 7;
+            this.exitButton.Text = "Çıkış Yap";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // button7
             // 
@@ -218,6 +219,7 @@
             // 
             // panel4
             // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.btnUpdateCategory);
             this.panel4.Controls.Add(this.btnDeleteCategory);
             this.panel4.Controls.Add(this.btnCreateCategory);
@@ -338,7 +340,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCategory";
@@ -357,7 +359,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;

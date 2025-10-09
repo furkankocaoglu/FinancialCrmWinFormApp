@@ -20,19 +20,19 @@ namespace FinancialCrm
         FinancialCrmDbEntities db = new FinancialCrmDbEntities();
         private void btnCategoryList_Click(object sender, EventArgs e)
         {
-            List<Categories> categories =db.Categories.ToList();
-                
+            List<Categories> categories = db.Categories.ToList();
 
-            dataGridView1.DataSource = categories;  
+
+            dataGridView1.DataSource = categories;
         }
 
         private void btnCreateCategory_Click(object sender, EventArgs e)
         {
-            string categoryName= txtCategoryName.Text;
+            string categoryName = txtCategoryName.Text;
 
-            Categories categories= new Categories();
+            Categories categories = new Categories();
 
-            categories.CategoryName = categoryName; 
+            categories.CategoryName = categoryName;
 
             db.Categories.Add(categories);
             db.SaveChanges();
@@ -45,9 +45,9 @@ namespace FinancialCrm
 
         private void btnDeleteCategory_Click(object sender, EventArgs e)
         {
-            int id= int.Parse(txtCategoryId.Text);
+            int id = int.Parse(txtCategoryId.Text);
 
-            Categories categories=db.Categories.Find(id);
+            Categories categories = db.Categories.Find(id);
 
             db.Categories.Remove(categories);
             db.SaveChanges();
@@ -56,17 +56,27 @@ namespace FinancialCrm
         }
 
         private void btnUpdateCategory_Click(object sender, EventArgs e)
-        {          
+        {
 
-            int id= int.Parse(txtCategoryId.Text);  
+            int id = int.Parse(txtCategoryId.Text);
 
-            Categories categories =db.Categories.Find(id);
+            Categories categories = db.Categories.Find(id);
 
-            categories.CategoryName=txtCategoryName.Text;
+            categories.CategoryName = txtCategoryName.Text;
 
             db.SaveChanges();
 
             MessageBox.Show("Kategori düzenlendi");
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Uygulamadan çıkmak istiyor musunuz?", "Çıkış", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
