@@ -47,10 +47,20 @@
             this.btnList = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTotalSpend = new System.Windows.Forms.TextBox();
+            this.txtCategorySpend = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTopCategoryName = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtLittleCategorySpend = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtLittleSpendCategory = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -69,6 +79,7 @@
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Çıkış Yap";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panel1
             // 
@@ -200,7 +211,7 @@
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(382, 101);
+            this.panel3.Location = new System.Drawing.Point(221, 97);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(491, 154);
             this.panel3.TabIndex = 19;
@@ -218,7 +229,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(538, 53);
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(217, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(194, 31);
             this.label2.TabIndex = 20;
@@ -226,8 +238,9 @@
             // 
             // btnList
             // 
-            this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnList.Location = new System.Drawing.Point(384, 277);
+            this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnList.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnList.Location = new System.Drawing.Point(223, 273);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(75, 40);
             this.btnList.TabIndex = 21;
@@ -238,26 +251,120 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(259, 93);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label3.Location = new System.Drawing.Point(5, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 13);
+            this.label3.Size = new System.Drawing.Size(139, 16);
             this.label3.TabIndex = 22;
-            this.label3.Text = "Toplam Harcamam: ";
+            this.label3.Text = "Toplam Harcamam";
             // 
             // txtTotalSpend
             // 
-            this.txtTotalSpend.Location = new System.Drawing.Point(262, 109);
+            this.txtTotalSpend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTotalSpend.Location = new System.Drawing.Point(156, 11);
             this.txtTotalSpend.Name = "txtTotalSpend";
-            this.txtTotalSpend.Size = new System.Drawing.Size(100, 20);
+            this.txtTotalSpend.Size = new System.Drawing.Size(100, 22);
             this.txtTotalSpend.TabIndex = 23;
+            // 
+            // txtCategorySpend
+            // 
+            this.txtCategorySpend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCategorySpend.Location = new System.Drawing.Point(420, 130);
+            this.txtCategorySpend.Name = "txtCategorySpend";
+            this.txtCategorySpend.Size = new System.Drawing.Size(302, 22);
+            this.txtCategorySpend.TabIndex = 24;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label4.Location = new System.Drawing.Point(5, 133);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(409, 16);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "En Çok Harcama Olan Kategori Numarası ve Toplam Tutar";
+            // 
+            // txtTopCategoryName
+            // 
+            this.txtTopCategoryName.Location = new System.Drawing.Point(264, 59);
+            this.txtTopCategoryName.Name = "txtTopCategoryName";
+            this.txtTopCategoryName.Size = new System.Drawing.Size(100, 20);
+            this.txtTopCategoryName.TabIndex = 26;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label5.Location = new System.Drawing.Point(5, 63);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(248, 16);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "En Çok Harcama Olan Kategori Adı";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label6.Location = new System.Drawing.Point(5, 87);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(238, 16);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "En Az Harcama Olan Kategori Adı";
+            // 
+            // txtLittleCategorySpend
+            // 
+            this.txtLittleCategorySpend.Location = new System.Drawing.Point(264, 87);
+            this.txtLittleCategorySpend.Name = "txtLittleCategorySpend";
+            this.txtLittleCategorySpend.Size = new System.Drawing.Size(100, 20);
+            this.txtLittleCategorySpend.TabIndex = 29;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label7.Location = new System.Drawing.Point(5, 160);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(399, 16);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "En Az Harcama Olan Kategori Numarası ve Toplam Tutar";
+            // 
+            // txtLittleSpendCategory
+            // 
+            this.txtLittleSpendCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtLittleSpendCategory.Location = new System.Drawing.Point(420, 157);
+            this.txtLittleSpendCategory.Name = "txtLittleSpendCategory";
+            this.txtLittleSpendCategory.Size = new System.Drawing.Size(302, 22);
+            this.txtLittleSpendCategory.TabIndex = 31;
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.txtTotalSpend);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.txtLittleSpendCategory);
+            this.panel4.Controls.Add(this.txtCategorySpend);
+            this.panel4.Controls.Add(this.txtLittleCategorySpend);
+            this.panel4.Controls.Add(this.txtTopCategoryName);
+            this.panel4.Location = new System.Drawing.Point(220, 331);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(777, 220);
+            this.panel4.TabIndex = 33;
             // 
             // FrmSpendings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1013, 595);
-            this.Controls.Add(this.txtTotalSpend);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel3);
@@ -272,6 +379,8 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,5 +405,14 @@
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTotalSpend;
+        private System.Windows.Forms.TextBox txtCategorySpend;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtTopCategoryName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtLittleCategorySpend;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtLittleSpendCategory;
+        private System.Windows.Forms.Panel panel4;
     }
 }

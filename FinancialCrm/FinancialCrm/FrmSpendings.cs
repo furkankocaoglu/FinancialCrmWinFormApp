@@ -14,7 +14,6 @@ namespace FinancialCrm
 {
     public partial class FrmSpendings : Form
     {
-        SqlConnection con; SqlCommand cmd;
         public FrmSpendings()
         {
             InitializeComponent();
@@ -33,6 +32,53 @@ namespace FinancialCrm
             decimal? totalSpend = db.Spendings.Sum(x => x.SpendingAmount ?? 0.00m);
             txtTotalSpend.Text = totalSpend.ToString();
 
+
+            var categoryTotalSpendings = db.Spendings.GroupBy(x => x.CategoryId).Select(g => new
+            {
+                CategoryId = g.Key,
+                TotalAmount = g.Sum(x => x.SpendingAmount)
+            }).ToList();
+
+            var topCategory = categoryTotalSpendings.OrderByDescending(c => c.TotalAmount).FirstOrDefault();
+
+            string categoryName = db.Categories.Where(x => x.CategoryId == topCategory.CategoryId).Select(y => y.CategoryName).FirstOrDefault();
+
+            txtTopCategoryName.Text = categoryName;
+
+            txtCategorySpend.Text = $"Kategori ID: {topCategory.CategoryId}, Toplam Harcama: {topCategory.TotalAmount:C}";
+
+
+            //En Az Harcama olan Kategori Adı
+
+
+            var littleCategorySpend = categoryTotalSpendings.OrderBy(c => c.TotalAmount).FirstOrDefault();
+
+
+            string littleCategorySpendResult = db.Categories.Where(x => x.CategoryId == littleCategorySpend.CategoryId).Select(y => y.CategoryName).FirstOrDefault();
+
+
+            txtLittleCategorySpend.Text = littleCategorySpendResult;
+
+
+            txtLittleSpendCategory.Text= $"Kategori Id: {littleCategorySpend.CategoryId}, Toplam Harcama: {littleCategorySpend.TotalAmount}";
+
+
+
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            FrmSpendings frm= new FrmSpendings();
+            this.Hide();
+            this.Close();
+            
+            DialogResult result= MessageBox.Show("Uygulamadan çıkmak istiyor musunuz?","Çıkış",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+
+            if(result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 
