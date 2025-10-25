@@ -18,3 +18,4 @@ C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\obj\Debug\FinancialCrm.exe
 C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\obj\Debug\FinancialCrm.FrmDashboard.resources
 C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\obj\Debug\FinancialCrm.FrmCategory.resources
 C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\obj\Debug\FinancialCrm.FrmSpendings.resources
+C:\Users\kocao\source\repos\FinancialCrm\FinancialCrm\obj\Debug\FinancialCrm.FrmAdmin.resources

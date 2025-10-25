@@ -60,7 +60,7 @@ namespace FinancialCrm
             txtLittleCategorySpend.Text = littleCategorySpendResult;
 
 
-            txtLittleSpendCategory.Text= $"Kategori Id: {littleCategorySpend.CategoryId}, Toplam Harcama: {littleCategorySpend.TotalAmount}";
+            txtLittleSpendCategory.Text = $"Kategori ID: {littleCategorySpend.CategoryId}, Toplam Harcama: {littleCategorySpend.TotalAmount:C}";
 
 
 
@@ -69,13 +69,13 @@ namespace FinancialCrm
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            FrmSpendings frm= new FrmSpendings();
+            FrmSpendings frm = new FrmSpendings();
             this.Hide();
             this.Close();
-            
-            DialogResult result= MessageBox.Show("Uygulamadan çıkmak istiyor musunuz?","Çıkış",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
 
-            if(result == DialogResult.Yes)
+            DialogResult result = MessageBox.Show("Uygulamadan çıkmak istiyor musunuz?", "Çıkış", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
             {
                 Application.Exit();
             }
