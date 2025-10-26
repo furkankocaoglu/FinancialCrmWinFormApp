@@ -29,6 +29,8 @@ namespace FinancialCrm
 
         private void FrmSpendings_Load(object sender, EventArgs e)
         {
+            this.BackColor = FrmSettings.AppSettings.CurrentColorScheme;
+
             decimal? totalSpend = db.Spendings.Sum(x => x.SpendingAmount ?? 0.00m);
             txtTotalSpend.Text = totalSpend.ToString();
 
@@ -61,8 +63,6 @@ namespace FinancialCrm
 
 
             txtLittleSpendCategory.Text = $"Kategori ID: {littleCategorySpend.CategoryId}, Toplam Harcama: {littleCategorySpend.TotalAmount:C}";
-
-
 
 
         }

@@ -15,6 +15,8 @@ namespace FinancialCrm
 
         private void FrmBanks_Load(object sender, EventArgs e)
         {
+            this.BackColor = FrmSettings.AppSettings.CurrentColorScheme;
+
             //Banka Bakiyleri
 
             decimal ziraatBankBalance = db.Banks.Where(x => x.BankTitle == "Ziraat Bankası").Select(y => y.BankBalance).FirstOrDefault() ?? 0.0m;
@@ -73,6 +75,13 @@ namespace FinancialCrm
             {
                 Application.Exit();
             }
+        }
+
+        private void frmSettingsButton_Click(object sender, EventArgs e)
+        {
+            FrmSettings frm= new FrmSettings();
+            frm.Show();
+            this.Hide();
         }
     }
 }

@@ -22,7 +22,6 @@ namespace FinancialCrm
         {
             List<Categories> categories = db.Categories.ToList();
 
-
             dataGridView1.DataSource = categories;
         }
 
@@ -77,6 +76,11 @@ namespace FinancialCrm
             {
                 Application.Exit();
             }
+        }
+
+        private void FrmCategory_Load(object sender, EventArgs e)
+        {
+            this.BackColor = FrmSettings.AppSettings.CurrentColorScheme;
         }
     }
 }

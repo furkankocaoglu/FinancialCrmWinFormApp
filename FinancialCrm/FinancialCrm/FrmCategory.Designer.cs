@@ -92,10 +92,10 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Location = new System.Drawing.Point(5, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(287, 730);
+            this.panel1.Size = new System.Drawing.Size(283, 710);
             this.panel1.TabIndex = 17;
             // 
             // exitButton
@@ -228,10 +228,10 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.txtCategoryId);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(305, 38);
+            this.panel4.Location = new System.Drawing.Point(305, 11);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1031, 315);
+            this.panel4.Size = new System.Drawing.Size(1031, 342);
             this.panel4.TabIndex = 19;
             // 
             // btnUpdateCategory
@@ -239,7 +239,7 @@
             this.btnUpdateCategory.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnUpdateCategory.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUpdateCategory.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnUpdateCategory.Location = new System.Drawing.Point(768, 214);
+            this.btnUpdateCategory.Location = new System.Drawing.Point(743, 223);
             this.btnUpdateCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateCategory.Name = "btnUpdateCategory";
             this.btnUpdateCategory.Size = new System.Drawing.Size(205, 44);
@@ -253,7 +253,7 @@
             this.btnDeleteCategory.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnDeleteCategory.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDeleteCategory.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnDeleteCategory.Location = new System.Drawing.Point(557, 214);
+            this.btnDeleteCategory.Location = new System.Drawing.Point(532, 223);
             this.btnDeleteCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteCategory.Name = "btnDeleteCategory";
             this.btnDeleteCategory.Size = new System.Drawing.Size(205, 44);
@@ -267,7 +267,7 @@
             this.btnCreateCategory.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnCreateCategory.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCreateCategory.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnCreateCategory.Location = new System.Drawing.Point(347, 214);
+            this.btnCreateCategory.Location = new System.Drawing.Point(322, 223);
             this.btnCreateCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCreateCategory.Name = "btnCreateCategory";
             this.btnCreateCategory.Size = new System.Drawing.Size(205, 44);
@@ -281,7 +281,7 @@
             this.btnCategoryList.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnCategoryList.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnCategoryList.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnCategoryList.Location = new System.Drawing.Point(135, 214);
+            this.btnCategoryList.Location = new System.Drawing.Point(110, 223);
             this.btnCategoryList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCategoryList.Name = "btnCategoryList";
             this.btnCategoryList.Size = new System.Drawing.Size(205, 44);
@@ -293,18 +293,18 @@
             // txtCategoryName
             // 
             this.txtCategoryName.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txtCategoryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCategoryName.Location = new System.Drawing.Point(135, 118);
+            this.txtCategoryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCategoryName.Location = new System.Drawing.Point(177, 134);
             this.txtCategoryName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCategoryName.Name = "txtCategoryName";
-            this.txtCategoryName.Size = new System.Drawing.Size(855, 30);
+            this.txtCategoryName.Size = new System.Drawing.Size(773, 34);
             this.txtCategoryName.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(3, 123);
+            this.label2.Location = new System.Drawing.Point(51, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 24);
             this.label2.TabIndex = 2;
@@ -313,18 +313,18 @@
             // txtCategoryId
             // 
             this.txtCategoryId.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txtCategoryId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCategoryId.Location = new System.Drawing.Point(135, 41);
+            this.txtCategoryId.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCategoryId.Location = new System.Drawing.Point(177, 57);
             this.txtCategoryId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCategoryId.Name = "txtCategoryId";
-            this.txtCategoryId.Size = new System.Drawing.Size(855, 30);
+            this.txtCategoryId.Size = new System.Drawing.Size(773, 34);
             this.txtCategoryId.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(16, 46);
+            this.label5.Location = new System.Drawing.Point(64, 64);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 24);
             this.label5.TabIndex = 0;
@@ -334,7 +334,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackColor = System.Drawing.SystemColors.GrayText;
             this.ClientSize = new System.Drawing.Size(1351, 732);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -344,6 +344,7 @@
             this.Name = "FrmCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCategory";
+            this.Load += new System.EventHandler(this.FrmCategory_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

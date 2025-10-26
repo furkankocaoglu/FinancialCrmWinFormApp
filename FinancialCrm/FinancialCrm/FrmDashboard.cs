@@ -22,6 +22,7 @@ namespace FinancialCrm
         int count = 0;
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
+            this.BackColor = FrmSettings.AppSettings.CurrentColorScheme;
             decimal totalBalance = db.Banks.Sum(x => x.BankBalance ?? 0.0m);
 
             lblToplamBakiyem.Text = totalBalance.ToString("0.00") + "₺";
@@ -100,6 +101,13 @@ namespace FinancialCrm
             {
                 Application.Exit();
             }
+        }
+
+        private void frmSettingsButton_Click(object sender, EventArgs e)
+        {
+            FrmSettings frm = new FrmSettings();
+            frm.Show();
+            this.Hide();
         }
     }
 }

@@ -21,6 +21,8 @@ namespace FinancialCrm
         FinancialCrmDbEntities db = new FinancialCrmDbEntities();
         private void FrmBilling_Load(object sender, EventArgs e)
         {
+            this.BackColor = FrmSettings.AppSettings.CurrentColorScheme;
+
             List<Bills> bills = db.Bills.ToList();
             dataGridView1.DataSource = bills;
         }

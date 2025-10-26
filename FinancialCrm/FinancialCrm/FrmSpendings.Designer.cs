@@ -72,10 +72,10 @@
             // 
             this.btnExit.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnExit.Location = new System.Drawing.Point(32, 415);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Location = new System.Drawing.Point(43, 511);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(154, 36);
+            this.btnExit.Size = new System.Drawing.Size(205, 44);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Çıkış Yap";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -93,20 +93,20 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(-1, 39);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(12, 54);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(216, 553);
+            this.panel1.Size = new System.Drawing.Size(274, 674);
             this.panel1.TabIndex = 17;
             // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button7.Location = new System.Drawing.Point(32, 364);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Location = new System.Drawing.Point(43, 448);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(154, 36);
+            this.button7.Size = new System.Drawing.Size(205, 44);
             this.button7.TabIndex = 6;
             this.button7.Text = "Ayarlar";
             this.button7.UseVisualStyleBackColor = true;
@@ -115,10 +115,10 @@
             // 
             this.button6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button6.Location = new System.Drawing.Point(32, 316);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Location = new System.Drawing.Point(43, 389);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(154, 36);
+            this.button6.Size = new System.Drawing.Size(205, 44);
             this.button6.TabIndex = 5;
             this.button6.Text = "Dashboard";
             this.button6.UseVisualStyleBackColor = true;
@@ -127,10 +127,10 @@
             // 
             this.button5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button5.Location = new System.Drawing.Point(32, 264);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(43, 325);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(154, 36);
+            this.button5.Size = new System.Drawing.Size(205, 44);
             this.button5.TabIndex = 4;
             this.button5.Text = "Banka Hareketleri";
             this.button5.UseVisualStyleBackColor = true;
@@ -139,10 +139,10 @@
             // 
             this.btnBillForm.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnBillForm.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnBillForm.Location = new System.Drawing.Point(32, 214);
-            this.btnBillForm.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBillForm.Location = new System.Drawing.Point(43, 263);
+            this.btnBillForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBillForm.Name = "btnBillForm";
-            this.btnBillForm.Size = new System.Drawing.Size(154, 36);
+            this.btnBillForm.Size = new System.Drawing.Size(205, 44);
             this.btnBillForm.TabIndex = 3;
             this.btnBillForm.Text = "Giderler";
             this.btnBillForm.UseVisualStyleBackColor = true;
@@ -151,10 +151,10 @@
             // 
             this.button3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button3.Location = new System.Drawing.Point(32, 165);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(43, 203);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(154, 36);
+            this.button3.Size = new System.Drawing.Size(205, 44);
             this.button3.TabIndex = 2;
             this.button3.Text = "Faturalar";
             this.button3.UseVisualStyleBackColor = true;
@@ -163,10 +163,10 @@
             // 
             this.button2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Location = new System.Drawing.Point(32, 116);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(43, 143);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 36);
+            this.button2.Size = new System.Drawing.Size(205, 44);
             this.button2.TabIndex = 1;
             this.button2.Text = "Bankalar";
             this.button2.UseVisualStyleBackColor = true;
@@ -175,10 +175,10 @@
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(32, 68);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(43, 84);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 36);
+            this.button1.Size = new System.Drawing.Size(205, 44);
             this.button1.TabIndex = 0;
             this.button1.Text = "Kategoriler";
             this.button1.UseVisualStyleBackColor = true;
@@ -188,10 +188,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(8, 5);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(11, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 23);
+            this.label1.Size = new System.Drawing.Size(246, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Harcamalarım / Giderler";
             // 
@@ -201,19 +200,20 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label1);
             this.panel2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.panel2.Location = new System.Drawing.Point(-1, 3);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(-1, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1015, 38);
+            this.panel2.Size = new System.Drawing.Size(1352, 46);
             this.panel2.TabIndex = 18;
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(221, 97);
+            this.panel3.Location = new System.Drawing.Point(295, 119);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(491, 154);
+            this.panel3.Size = new System.Drawing.Size(653, 189);
             this.panel3.TabIndex = 19;
             // 
             // dataGridView1
@@ -221,8 +221,10 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(487, 150);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(649, 185);
             this.dataGridView1.TabIndex = 0;
             // 
             // label2
@@ -230,9 +232,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(217, 54);
+            this.label2.Location = new System.Drawing.Point(289, 66);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 31);
+            this.label2.Size = new System.Drawing.Size(241, 39);
             this.label2.TabIndex = 20;
             this.label2.Text = "Harcamalarım";
             // 
@@ -240,9 +243,10 @@
             // 
             this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnList.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnList.Location = new System.Drawing.Point(223, 273);
+            this.btnList.Location = new System.Drawing.Point(297, 336);
+            this.btnList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(75, 40);
+            this.btnList.Size = new System.Drawing.Size(100, 49);
             this.btnList.TabIndex = 21;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = true;
@@ -253,26 +257,29 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label3.Location = new System.Drawing.Point(5, 13);
+            this.label3.Location = new System.Drawing.Point(7, 16);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 16);
+            this.label3.Size = new System.Drawing.Size(167, 20);
             this.label3.TabIndex = 22;
             this.label3.Text = "Toplam Harcamam";
             // 
             // txtTotalSpend
             // 
             this.txtTotalSpend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTotalSpend.Location = new System.Drawing.Point(156, 11);
+            this.txtTotalSpend.Location = new System.Drawing.Point(180, 13);
+            this.txtTotalSpend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTotalSpend.Name = "txtTotalSpend";
-            this.txtTotalSpend.Size = new System.Drawing.Size(100, 22);
+            this.txtTotalSpend.Size = new System.Drawing.Size(132, 26);
             this.txtTotalSpend.TabIndex = 23;
             // 
             // txtCategorySpend
             // 
             this.txtCategorySpend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCategorySpend.Location = new System.Drawing.Point(420, 130);
+            this.txtCategorySpend.Location = new System.Drawing.Point(515, 160);
+            this.txtCategorySpend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCategorySpend.Name = "txtCategorySpend";
-            this.txtCategorySpend.Size = new System.Drawing.Size(302, 22);
+            this.txtCategorySpend.Size = new System.Drawing.Size(401, 26);
             this.txtCategorySpend.TabIndex = 24;
             // 
             // label4
@@ -280,17 +287,19 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(5, 133);
+            this.label4.Location = new System.Drawing.Point(7, 164);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(409, 16);
+            this.label4.Size = new System.Drawing.Size(500, 20);
             this.label4.TabIndex = 25;
             this.label4.Text = "En Çok Harcama Olan Kategori Numarası ve Toplam Tutar";
             // 
             // txtTopCategoryName
             // 
-            this.txtTopCategoryName.Location = new System.Drawing.Point(264, 59);
+            this.txtTopCategoryName.Location = new System.Drawing.Point(320, 73);
+            this.txtTopCategoryName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTopCategoryName.Name = "txtTopCategoryName";
-            this.txtTopCategoryName.Size = new System.Drawing.Size(100, 20);
+            this.txtTopCategoryName.Size = new System.Drawing.Size(132, 22);
             this.txtTopCategoryName.TabIndex = 26;
             // 
             // label5
@@ -298,9 +307,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label5.Location = new System.Drawing.Point(5, 63);
+            this.label5.Location = new System.Drawing.Point(7, 78);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(248, 16);
+            this.label5.Size = new System.Drawing.Size(305, 20);
             this.label5.TabIndex = 27;
             this.label5.Text = "En Çok Harcama Olan Kategori Adı";
             // 
@@ -309,17 +319,19 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label6.Location = new System.Drawing.Point(5, 87);
+            this.label6.Location = new System.Drawing.Point(7, 107);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(238, 16);
+            this.label6.Size = new System.Drawing.Size(295, 20);
             this.label6.TabIndex = 30;
             this.label6.Text = "En Az Harcama Olan Kategori Adı";
             // 
             // txtLittleCategorySpend
             // 
-            this.txtLittleCategorySpend.Location = new System.Drawing.Point(264, 87);
+            this.txtLittleCategorySpend.Location = new System.Drawing.Point(320, 107);
+            this.txtLittleCategorySpend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLittleCategorySpend.Name = "txtLittleCategorySpend";
-            this.txtLittleCategorySpend.Size = new System.Drawing.Size(100, 20);
+            this.txtLittleCategorySpend.Size = new System.Drawing.Size(132, 22);
             this.txtLittleCategorySpend.TabIndex = 29;
             // 
             // label7
@@ -327,18 +339,20 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label7.Location = new System.Drawing.Point(5, 160);
+            this.label7.Location = new System.Drawing.Point(7, 197);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(399, 16);
+            this.label7.Size = new System.Drawing.Size(490, 20);
             this.label7.TabIndex = 32;
             this.label7.Text = "En Az Harcama Olan Kategori Numarası ve Toplam Tutar";
             // 
             // txtLittleSpendCategory
             // 
             this.txtLittleSpendCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtLittleSpendCategory.Location = new System.Drawing.Point(420, 157);
+            this.txtLittleSpendCategory.Location = new System.Drawing.Point(515, 193);
+            this.txtLittleSpendCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLittleSpendCategory.Name = "txtLittleSpendCategory";
-            this.txtLittleSpendCategory.Size = new System.Drawing.Size(302, 22);
+            this.txtLittleSpendCategory.Size = new System.Drawing.Size(401, 26);
             this.txtLittleSpendCategory.TabIndex = 31;
             // 
             // panel4
@@ -354,22 +368,24 @@
             this.panel4.Controls.Add(this.txtCategorySpend);
             this.panel4.Controls.Add(this.txtLittleCategorySpend);
             this.panel4.Controls.Add(this.txtTopCategoryName);
-            this.panel4.Location = new System.Drawing.Point(220, 331);
+            this.panel4.Location = new System.Drawing.Point(293, 407);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(777, 220);
+            this.panel4.Size = new System.Drawing.Size(1035, 270);
             this.panel4.TabIndex = 33;
             // 
             // FrmSpendings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 595);
+            this.ClientSize = new System.Drawing.Size(1351, 732);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmSpendings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSpendings";
