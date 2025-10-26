@@ -29,19 +29,26 @@ namespace FinancialCrm
                 return;
             }
 
-            Users user = db.Users.FirstOrDefault(x => x.UserName == kullaniciAdi && x.Password==sifre);
+            Users user = db.Users.FirstOrDefault(x => x.UserName == kullaniciAdi);
 
-            if (user == null)
+            if(user == null)
             {
-                MessageBox.Show("Kullanıcı adı veya şifre hatalı");
+                MessageBox.Show("Kullanıcı adını hatalı girdiniz");
                 return;
             }
-            
+            if(user.Password != sifre)
+            {
+                MessageBox.Show("Şifreyi hatalı girdiniz");
+                return;
+
+            }
             MessageBox.Show("Giriş başarılı");
 
             FrmBanks banks = new FrmBanks();
             banks.Show();
             this.Hide();
+
+
 
 
         }
